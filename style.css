@@ -111,10 +111,10 @@ margin:auto;
 }
 
 .hero-photo{
-width:85%;
-max-width:500px;
+width:100%;
+max-width:800px;
 margin:auto;
-border-radius:30px;
+border-radius:10px;
 box-shadow:0 15px 35px rgba(0,0,0,.08);
 }
 
@@ -140,18 +140,18 @@ margin-bottom:20px;
 
 .message-text{
 max-width:700px;
-margin:auto;
+margin:15px auto 0;
 text-align:center;
 }
 
 .calendar-image{
-width:310px;
+width:250px;
 margin:15px auto 0;
 }
 
 .little-pearl{
 width:130px;
-margin:10px auto;
+margin:5px auto;
 }
 
 .restaurant-photo{
