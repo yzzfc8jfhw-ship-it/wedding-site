@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+console.log("SCRIPT STARTED");
 const openBtn = document.getElementById('openInvitation');
 const welcomeScreen = document.getElementById('welcome-screen');
 const mainContent = document.getElementById('mainContent');
@@ -137,22 +138,20 @@ setInterval(updateCountdown,1000);
 
 // АНИМАЦИИ
 
-const observer = new IntersectionObserver(entries => {
+const observer = new IntersectionObserver((entries) => {
 
 entries.forEach(entry => {
 
 if(entry.isIntersecting){
-
 entry.target.classList.add('visible');
-
 }
 
 });
 
-},{
-threshold:0.15
-  
+}, {
+threshold: 0.15
 });
+
 const form = document.getElementById('rsvpForm');
 
 if(form){
