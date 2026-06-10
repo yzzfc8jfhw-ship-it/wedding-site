@@ -3,29 +3,48 @@
 <html lang="ru">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Кристина и Дмитрий</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+
+<audio id="bgMusic" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
 
 <!-- КОНВЕРТ -->
 
 <section id="welcome-screen">
 
-<div class="envelope-wrapper">
+<div class="welcome-content">
 
 <img src="images/envelope.png" class="envelope">
 
-<h2>Вам пришло приглашение</h2>
+<h1 class="welcome-title">
+ПРИГЛАШЕНИЕ НА СВАДЬБУ
+</h1>
 
-<p>Нажмите, чтобы открыть</p>
+<p class="welcome-subtitle">
+нажмите, чтобы открыть
+</p>
 
-<button id="openInvitation">
+<button id="musicButton" class="music-btn">
+♪ Включить музыку
+</button>
+
+<button id="openInvitation" class="open-btn">
 Открыть приглашение
 </button>
 
@@ -39,48 +58,78 @@
 
 <section class="hero fade-in">
 
+<div class="hero-heading">
+
+<div class="invite-title">
+Приглашение
+</div>
+
+<div class="invite-subtitle">
+на свадьбу
+</div>
+
+</div>
+
+<div class="hero-gallery">
+
+<img src="images/pearl-main.png" class="pearl-left">
+
 <img src="images/hero-photo.png" class="hero-photo">
 
-<h1>Кристина & Дмитрий</h1>
+<div class="side-photos">
 
-<p class="subtitle">
-Приглашение на свадьбу
-</p>
+<img src="images/couple-left.png" class="couple-photo">
 
-</section>
+<img src="images/couple-right.png" class="couple-photo">
 
-<section class="calendar-section fade-in">
+</div>
 
-<h2>8 августа 2026</h2>
+<img src="images/pearl-main.png" class="pearl-right">
 
-<img src="images/calendar.png" class="calendar-image">
+</div>
+
+<h2 class="couple-names">
+Кристина и Дмитрий
+</h2>
 
 </section>
 
 <section class="message-section fade-in">
 
-<h2>Дорогие родные и друзья!</h2>
+<h2 class="section-liana">
+Дорогие родные и друзья!
+</h2>
 
-<p>
+<p class="message-text">
+
 Скоро состоится очень важное и радостное для нас событие —
 наша свадьба.
 
 Этот день невозможно представить без самых близких для нас людей,
-и мы будем счастливы разделить его вместе с вами.
+мы бы очень хотели, чтобы вы провели его вместе с нами.
 
 </p>
+
+<img src="images/pearl-little.png" class="little-pearl">
+
+<img src="images/calendar.png" class="calendar-image">
 
 </section>
 
 <section class="location-section fade-in">
 
-<h2>Место проведения</h2>
+<h2 class="section-liana">
+Место
+</h2>
+
+<img src="images/restaurant.png" class="restaurant-photo">
+
+<h3 class="restaurant-title">
+Ресторан «Панорама»
+</h3>
 
 <p>
-Ресторан «Панорама»
-<br>
-г. Благовещенск
-<br>
+г. Благовещенск<br>
 Игнатьевское шоссе, 71
 </p>
 
@@ -88,111 +137,211 @@
 href="https://go.2gis.com/2xAoZ"
 target="_blank"
 class="button">
-Посмотреть на карте </a>
 
-</section>
+Открыть карту
 
-<section class="countdown-section fade-in">
-
-<h2>До нашего дня осталось</h2>
-
-<div id="countdown"></div>
+</a>
 
 </section>
 
 <section class="timeline fade-in">
 
-<h2>План дня</h2>
+<h2 class="section-liana">
+План дня
+</h2>
 
-<div class="event">
-13:15 — Сбор гостей
+<div class="timeline-item">
+
+<img src="images/glass.png">
+
+<div>
+<h3>13:15</h3>
+<p>Сбор гостей</p>
 </div>
 
-<div class="event">
-13:45 — Регистрация
 </div>
 
-<div class="event">
-14:15 — Фотосессия
+<div class="timeline-item">
+
+<img src="images/ring.png">
+
+<div>
+<h3>13:45</h3>
+<p>Регистрация</p>
 </div>
 
-<div class="event">
-18:00 — Банкет
 </div>
 
-<div class="event">
-00:00 — Завершение дня
+<div class="timeline-item">
+
+<img src="images/photos.png">
+
+<div>
+<h3>14:15</h3>
+<p>Фотосессия</p>
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<img src="images/dish.png">
+
+<div>
+<h3>18:00</h3>
+<p>Банкет</p>
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<img src="images/moon.png">
+
+<div>
+<h3>00:00</h3>
+<p>Завершение дня</p>
+</div>
+
 </div>
 
 </section>
 
 <section class="dresscode fade-in">
 
-<h2>Дресс-код</h2>
+<h2 class="section-liana">
+Дресс-код
+</h2>
 
 <p>
-Пастельные оттенки
+
+Мы очень старались сделать праздник красивым и будем рады,
+если в своих нарядах вы поддержите цветовую гамму нашей свадьбы.
+
 </p>
 
 <img src="images/palette.png" class="palette">
+
+<div class="pastel-caption">
+пастельные тона
+</div>
 
 </section>
 
 <section class="wishes fade-in">
 
-<h2>Пожелания</h2>
+<h2 class="section-liana">
+Пожелания
+</h2>
+
+<img src="images/heart.png" class="heart">
 
 <p>
-Просим вас не дарить нам цветы.
 
-Приятным комплиментом станет бутылка вашего любимого вина,
-которую мы откроем на ближайшем семейном празднике.
+Просим вас не дарить нам цветы —
+мы не успеем насладиться их красотой до отъезда.
+
+Но приятным комплиментом для нас будет бутылка вашего любимого вина,
+которую мы откроем на ближайшем празднике.
 
 </p>
+
+<img src="images/heart.png" class="heart">
+
+</section>
+
+<section class="countdown-section fade-in">
+
+<h2 class="count-title">
+Ждём Вас
+</h2>
+
+<div class="through">
+через
+</div>
+
+<div id="countdown"></div>
 
 </section>
 
 <section class="rsvp fade-in">
 
-<h2>Подтвердите присутствие</h2>
+<p class="rsvp-text">
+
+Ответьте, пожалуйста,
+на несколько вопросов,
+которые мы для Вас подготовили
+
+</p>
+
+<img src="images/arrow.png" class="arrow">
 
 <iframe
 src="https://forms.yandex.ru/u/6a2535c402848f3d65e83420/"
 width="100%"
-height="800"
+height="1400"
 frameborder="0">
+
 </iframe>
 
 </section>
 
 <section class="contacts fade-in">
 
-<h2>Контакты</h2>
+<h2 class="section-liana">
+Контакты
+</h2>
 
-<p>
-Жених:
+<div class="contact-card">
+
+<img src="images/contact.png">
+
+<div>
+
+<h3>Жених</h3>
+
 <a href="tel:+79818861270">
-8 (981) 886-12-70
++7 (981) 886-12-70
 </a>
-</p>
 
-<p>
-Невеста:
+</div>
+
+</div>
+
+<div class="contact-card">
+
+<img src="images/contact.png">
+
+<div>
+
+<h3>Невеста</h3>
+
 <a href="tel:+79146179093">
-8 (914) 617-90-93
++7 (914) 617-90-93
 </a>
+
+</div>
+
+</div>
+
+<p class="love-text">
+С любовью,
 </p>
 
-<p class="signature">
-С любовью,<br>
-Дима и Кристина
+<p class="love-sign">
+Кристина и Дмитрий
 </p>
 
 </section>
 
 </main>
 
+<button id="floatingMusicBtn">
+♪
+</button>
+
 <script src="script.js"></script>
 
 </body>
 </html>
+
