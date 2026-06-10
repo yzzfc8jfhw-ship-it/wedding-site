@@ -182,7 +182,7 @@ secondDay: form.secondDay.value
 try {
 
 const response = await fetch(
-"https://script.google.com/macros/s/AKfycbxQlcJg2TMm8pMrCbq-faXuB5dobLrRxtP3uJmza2URoHec9KedxrPr9fJexVe5vdu4/exec",
+"https://script.google.com/macros/s/AKfycbwH28R-6B_oQCLBMFj7ntr5q-hP4g6oYy7XVt20gmacV1SrfPaXew9cXn0lGm1ZN6kEqQ/exec",
 {
 method:"POST",
 headers:{
@@ -209,3 +209,9 @@ document.getElementById('successMessage').innerHTML =
 'Ошибка отправки формы';
 
 }
+
+});
+
+}
+
+});
