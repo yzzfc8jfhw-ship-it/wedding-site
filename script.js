@@ -180,7 +180,7 @@ secondDay: form.secondDay.value
 };
 
 await fetch(
-https://script.google.com/macros/s/AKfycbxC93YTSrdnSax0TyxBBg_jLCsa09sXrhoLgainsDAQH-rpgjbAADD8xnmn3CPavnHCgg/exec,
+"https://script.google.com/macros/s/AKfycbxC93YTSrdnSax0TyxBBg_jLCsa09sXrhoLgainsDAQH-rpgjbAADD8xnmn3CPavnHCgg/exec",
 {
 method:"POST",
 body:JSON.stringify(data)
