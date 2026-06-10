@@ -121,7 +121,7 @@ box-shadow:0 15px 35px rgba(0,0,0,.08);
 
 .couple-names{
 font-family:'Liana';
-font-size:56px;
+font-size:50px;
 font-weight:normal;
 white-space:nowrap;
 margin-top:20px;
@@ -157,12 +157,12 @@ font-size:1.15rem;
 
 .little-pearl{
 width:130px;
-margin:0 auto 5px;
+margin:0 auto 0px;
 }
 
 .calendar-image{
 width:320px;
-margin:5px auto 0;
+margin:0px auto 0;
 }
 
 /* -------------------
@@ -213,13 +213,13 @@ align-items:center;
 gap:20px;
 background:white;
 padding:18px;
-border-radius:22px;
+border-radius:15px;
 margin-bottom:18px;
 box-shadow:0 10px 20px rgba(0,0,0,.04);
 }
 
 .timeline-item img{
-width:95px;
+width:150px;
 flex-shrink:0;
 }
 
@@ -439,7 +439,7 @@ width:100%;
 }
 
 .couple-names{
-font-size:42px;
+font-size:38px;
 }
 
 .section-liana{
