@@ -246,7 +246,67 @@ class="button">
 
 <div id="custom-form">
 
-<!-- здесь позже вставим нашу форму -->
+<form id="rsvpForm">
+
+<input
+type="text"
+name="name"
+placeholder="Ваше имя и фамилия"
+required>
+
+<select name="attendance" required>
+
+<option value="">
+Сможете ли присутствовать?
+</option>
+
+<option>
+Я приду / Мы придём
+</option>
+
+<option>
+Не смогу присутствовать
+</option>
+
+</select>
+
+<label>
+Что предпочитаете из напитков?
+</label>
+
+<div class="checkboxes">
+
+<label><input type="checkbox" value="Красное вино"> Красное вино</label>
+
+<label><input type="checkbox" value="Белое вино"> Белое вино</label>
+
+<label><input type="checkbox" value="Игристое вино"> Игристое вино</label>
+
+<label><input type="checkbox" value="Водка"> Водка</label>
+
+<label><input type="checkbox" value="Безалкогольные напитки"> Безалкогольные напитки</label>
+
+</div>
+
+<select name="secondDay" required>
+
+<option value="">
+Планируете посетить второй день?
+</option>
+
+<option>Да</option>
+
+<option>Нет</option>
+
+</select>
+
+<button type="submit">
+Отправить ответ
+</button>
+
+</form>
+
+<div id="successMessage"></div>
 
 </div>
 
