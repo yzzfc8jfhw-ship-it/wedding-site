@@ -151,6 +151,51 @@ entry.target.classList.add('visible');
 
 },{
 threshold:0.15
+  
+});
+const form = document.getElementById('rsvpForm');
+
+if(form){
+
+form.addEventListener('submit', async (e) => {
+
+e.preventDefault();
+
+const drinks = [];
+
+document
+.querySelectorAll('.checkboxes input:checked')
+.forEach(el => drinks.push(el.value));
+
+const data = {
+
+name: form.name.value,
+
+attendance: form.attendance.value,
+
+drinks: drinks.join(", "),
+
+secondDay: form.secondDay.value
+
+};
+
+await fetch(
+https://script.google.com/macros/s/AKfycbxC93YTSrdnSax0TyxBBg_jLCsa09sXrhoLgainsDAQH-rpgjbAADD8xnmn3CPavnHCgg/exec,
+{
+method:"POST",
+body:JSON.stringify(data)
+}
+);
+
+document.getElementById(
+'successMessage'
+).innerHTML =
+'Спасибо! Мы получили Ваш ответ 🤍';
+
+form.reset();
+
 });
 
+}
+  
 });
