@@ -47,7 +47,7 @@ padding:20px;
 }
 
 .envelope{
-width:min(320px,80vw);
+width:min(350px,100vw);
 margin:auto;
 cursor:pointer;
 transition:1s;
@@ -63,7 +63,7 @@ font-family:'Playfair Display',serif;
 font-size:clamp(24px,5vw,36px);
 font-weight:400;
 margin-top:3px;
-letter-spacing:10px;
+letter-spacing:5px;
 }
 
 .welcome-subtitle{
@@ -203,7 +203,7 @@ font-size:24px;
 font-size:1.2rem;
 text-align:center;
 max-width:700px;
-margin:auto;
+margin:10px auto;
 }
 
 .palette{
@@ -218,7 +218,7 @@ font-size:38px;
 }
 
 .heart{
-width:50px;
+width:70px;
 margin:15px auto;
 }
 
@@ -230,8 +230,8 @@ margin:auto;
 }
 
 .waiting-image{
-width:100%;
-max-width:420px;
+width:80%;
+max-width:380px;
 margin:0 auto 20px;
 }
 
