@@ -27,7 +27,7 @@ display:block;
 }
 
 section{
-padding:70px 24px;
+padding:45px 24px;
 position:relative;
 }
 
@@ -60,17 +60,18 @@ opacity:0;
 
 .welcome-title{
 font-family:'Playfair Display',serif;
-font-size:clamp(32px,6vw,48px);
+font-size:clamp(24px,5vw,36px);
 font-weight:400;
-margin-top:25px;
-letter-spacing:2px;
+margin-top:3px;
+letter-spacing:25px;
 }
 
 .welcome-subtitle{
 font-family:'Liana',cursive;
-font-size:32px;
-margin-top:12px;
-margin-bottom:24px;
+font-size:28px;
+margin-top:20px;
+margin-bottom:10px;
+white-space:nowrap;
 }
 
 .music-btn,
@@ -97,16 +98,10 @@ text-align:center;
 padding-top:100px;
 }
 
-.invite-title{
-font-family:'Playfair Display',serif;
-font-size:42px;
-}
-
-.invite-subtitle{
-font-family:'Liana';
-font-size:42px;
-margin-top:5px;
-margin-bottom:40px;
+.invite-image{
+width:100%;
+max-width:420px;
+margin:0 auto 20px;
 }
 
 .hero-gallery{
@@ -116,40 +111,11 @@ margin:auto;
 }
 
 .hero-photo{
-width:70%;
-max-width:420px;
+width:85%;
+max-width:500px;
 margin:auto;
 border-radius:30px;
 box-shadow:0 15px 35px rgba(0,0,0,.08);
-}
-
-.side-photos{
-display:flex;
-justify-content:center;
-gap:12px;
-margin-top:15px;
-}
-
-.couple-photo{
-width:42%;
-border-radius:24px;
-box-shadow:0 10px 25px rgba(0,0,0,.06);
-}
-
-.pearl-left{
-position:absolute;
-left:-20px;
-top:60px;
-width:100px;
-opacity:.9;
-}
-
-.pearl-right{
-position:absolute;
-right:-10px;
-bottom:-40px;
-width:90px;
-opacity:.9;
 }
 
 .couple-names{
@@ -157,6 +123,11 @@ font-family:'Liana';
 font-size:54px;
 font-weight:normal;
 margin-top:35px;
+}
+
+.hero{
+padding-top:70px;
+padding-bottom:20px;
 }
 
 .section-liana{
@@ -174,13 +145,13 @@ text-align:center;
 }
 
 .calendar-image{
-width:220px;
-margin:30px auto 0;
+width:310px;
+margin:15px auto 0;
 }
 
 .little-pearl{
-width:90px;
-margin:20px auto;
+width:130px;
+margin:10px auto;
 }
 
 .restaurant-photo{
@@ -195,6 +166,11 @@ box-shadow:0 12px 25px rgba(0,0,0,.08);
 font-family:'Playfair Display',serif;
 font-weight:500;
 margin-bottom:10px;
+}
+
+.location-section{
+text-align:center;
+padding-top:20px;
 }
 
 .timeline{
@@ -214,7 +190,8 @@ box-shadow:0 10px 20px rgba(0,0,0,.04);
 }
 
 .timeline-item img{
-width:60px;
+width:72px;
+flex-shrink:0;
 }
 
 .timeline-item h3{
@@ -222,10 +199,17 @@ font-family:'Playfair Display',serif;
 font-size:24px;
 }
 
+.dresscode-text{
+font-size:1.2rem;
+text-align:center;
+max-width:700px;
+margin:auto;
+}
+
 .palette{
 width:100%;
 max-width:500px;
-margin:30px auto;
+margin:10px auto;
 }
 
 .pastel-caption{
@@ -234,22 +218,21 @@ font-size:38px;
 }
 
 .heart{
-width:38px;
-margin:18px auto;
+width:50px;
+margin:15px auto;
 }
 
-.count-title{
-font-family:'Playfair Display',serif;
-font-size:52px;
-font-weight:400;
+.wishes-text{
+font-size:1.2rem;
 text-align:center;
+max-width:700px;
+margin:auto;
 }
 
-.through{
-font-family:'Liana';
-font-size:40px;
-text-align:center;
-margin-bottom:30px;
+.waiting-image{
+width:100%;
+max-width:420px;
+margin:0 auto 20px;
 }
 
 #countdown{
@@ -261,15 +244,14 @@ gap:12px;
 
 .time-box{
 background:white;
-border-radius:24px;
-padding:20px;
-min-width:95px;
+border-radius:20px;
+padding:14px;
+min-width:72px;
 box-shadow:0 10px 20px rgba(0,0,0,.05);
 }
 
 .time-number{
-font-size:36px;
-font-family:'Playfair Display',serif;
+font-size:28px;
 }
 
 .time-label{
@@ -280,12 +262,19 @@ text-transform:uppercase;
 
 .rsvp-text{
 text-align:center;
-max-width:500px;
+max-width:600px;
+font-size:1.3rem;
+margin:auto;
+}
+
+#custom-form{
+min-height:120px;
 }
 
 .arrow{
-width:120px;
-margin:25px auto;
+width:105px;
+margin:10px auto 20px;
+animation:bounceArrow 2s infinite;
 }
 
 iframe{
@@ -393,6 +382,14 @@ font-size:40px;
 font-size:42px;
 }
 
+@keyframes bounceArrow{
+
+0%,100%{
+transform:translateY(0);
 }
 
+50%{
+transform:translateY(10px);
+}
 
+}
