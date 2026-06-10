@@ -27,6 +27,19 @@ mainContent.style.display = 'block';
 
 window.scrollTo(0,0);
 
+if(music){
+
+music.play()
+.then(() => {
+
+musicPlaying = true;
+musicBtn.innerHTML = '❚❚';
+
+})
+.catch(() => {});
+
+}
+
 document.querySelectorAll('.fade-in').forEach(el => {
 observer.observe(el);
 });
