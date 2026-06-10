@@ -179,22 +179,33 @@ secondDay: form.secondDay.value
 
 };
 
-await fetch(
-"https://script.google.com/macros/s/AKfycbxC93YTSrdnSax0TyxBBg_jLCsa09sXrhoLgainsDAQH-rpgjbAADD8xnmn3CPavnHCgg/exec",
+try {
+
+const response = await fetch(
+"https://script.google.com/macros/s/AKfycbxQlcJg2TMm8pMrCbq-faXuB5dobLrRxtP3uJmza2URoHec9KedxrPr9fJexVe5vdu4/exec",
 {
 method:"POST",
+headers:{
+"Content-Type":"application/json"
+},
 body:JSON.stringify(data)
 }
 );
 
-document.getElementById(
-'successMessage'
-).innerHTML =
+const result = await response.text();
+
+console.log(result);
+
+document.getElementById('successMessage').innerHTML =
 'Спасибо! Мы получили Ваш ответ 🤍';
 
 form.reset();
 
-});
+} catch(error){
+
+console.error(error);
+
+document.getElementById('successMessage').innerHTML =
+'Ошибка отправки формы';
 
 }
-});
