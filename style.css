@@ -467,6 +467,48 @@ padding:10px;
 .time-number{
 font-size:22px;
 }
+#rsvpForm{
+max-width:650px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:18px;
+}
 
+#rsvpForm input,
+#rsvpForm select{
+padding:16px;
+border:none;
+border-radius:18px;
+font-size:16px;
+background:white;
+}
+
+.checkboxes{
+display:flex;
+flex-direction:column;
+gap:10px;
+text-align:left;
+background:white;
+padding:20px;
+border-radius:18px;
+}
+
+#rsvpForm button{
+background:#CBBFB3;
+color:white;
+border:none;
+padding:16px;
+border-radius:999px;
+font-size:16px;
+cursor:pointer;
+}
+
+#successMessage{
+margin-top:20px;
+font-size:20px;
+font-family:'Liana';
+}
+  
 }
 
