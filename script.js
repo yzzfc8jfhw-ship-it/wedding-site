@@ -170,6 +170,8 @@ const data = {
 
 name: form.name.value,
 
+guest: form.guest.value,
+
 attendance: form.attendance.value,
 
 drinks: drinks.join(", "),
