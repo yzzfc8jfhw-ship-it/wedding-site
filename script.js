@@ -183,7 +183,7 @@ secondDay: form.secondDay.value
 try {
 
 const response = await fetch(
-"https://script.google.com/macros/s/AKfycbwH28R-6B_oQCLBMFj7ntr5q-hP4g6oYy7XVt20gmacV1SrfPaXew9cXn0lGm1ZN6kEqQ/exec",
+"https://script.google.com/macros/s/AKfycbxWKXxJnNseYVtskva7ZsK4sXpAoRaWAp8mx3yDebsiHWrx-ia-EtzMXfazl06LXMqR/exec",
 {
 method:"POST",
 headers:{
