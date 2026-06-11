@@ -145,25 +145,28 @@ margin-bottom:40px;
 ------------------- */
 
 .message-section{
-padding-top:10px;
+  padding-top:10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .message-text{
-max-width:700px;
-margin:auto;
-text-align:center;
-font-size:1.15rem;
-margin-bottom:10px;
+  max-width:700px;
+  text-align:center;
+  font-size:1.15rem;
+  margin:0;
 }
 
 .little-pearl{
-width:130px;
-margin:20px auto 0;
+  width:130px;
+  margin:0;
 }
 
 .calendar-image{
-width:290px;
-margin:-5px auto 0;
+  width:290px;
+  margin:0;
 }
 
 /* -------------------
