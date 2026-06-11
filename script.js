@@ -186,10 +186,7 @@ const response = await fetch(
 "https://script.google.com/macros/s/AKfycbxWKXxJnNseYVtskva7ZsK4sXpAoRaWAp8mx3yDebsiHWrx-ia-EtzMXfazl06LXMqR/exec",
 {
 method:"POST",
-headers:{
-"Content-Type":"application/json"
-},
-body:JSON.stringify(data)
+body: JSON.stringify(data)
 }
 );
 
